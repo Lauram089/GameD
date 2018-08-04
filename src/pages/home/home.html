@@ -1,14 +1,74 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header no-border>
+  <ion-toolbar>
+    <img src="../../assets/img/logo.png" width="20%" height="20%"/>
+    <ion-title>GameD</ion-title>
+  </ion-toolbar>
 </ion-header>
 
+
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <br><br>
+  <h1>Usuario</h1>
+  <h3>Grado</h3>
+  <ion-item>
+    <ion-label>Grado Escolar</ion-label>
+    <ion-select [(ngModel)]="grado">
+      <ion-option value="pr">Primero</ion-option>
+      <ion-option value="se">Segundo</ion-option>
+      <ion-option value="te">Tercero</ion-option>
+      <ion-option value="cu">Cuarto</ion-option>
+      <ion-option value="qu">Quinto</ion-option>
+      <ion-option value="se">Sexto</ion-option>
+      <ion-option value="sp">Septimo</ion-option>
+      <ion-option value="oc">Octavo</ion-option>
+      <ion-option value="no">Noveno</ion-option>
+      <ion-option value="de">Decimo</ion-option>
+      <ion-option value="un">Undecimo</ion-option>
+    </ion-select>
+    </ion-item>
+
+  <h3>Área</h3>
+  <ion-item>
+      <ion-label>Área Escolar</ion-label>
+      <ion-select [(ngModel)]="area">
+        <ion-option value="ci">Ciencias Sociales</ion-option>
+        <ion-option value="ce">Ciencias Naturales</ion-option>
+        <ion-option value="in">Ingles</ion-option>
+        <ion-option value="le">Lenguaje</ion-option>
+        <ion-option value="ma">Matemáticas</ion-option>
+      </ion-select>
+    </ion-item>
+    <br><br>
+    <button ion-button outline block (click)="irpregunta()">Continuar</button>
+
+
+
+
+
+
+
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-title>
+        <!--
+        <p>Inocencio Zuñiga Conde</p>
+        <p>William Alfredo Pulido Casas</p>
+        <p>Laura Marcela Bolaños Romero</p>
+        -->
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
